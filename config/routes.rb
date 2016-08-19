@@ -53,4 +53,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  root to: 'sessions#new'
+  resources :sessions, only: :index
+  get "/auth/:provider/callback" => 'sessions#create'
 end
