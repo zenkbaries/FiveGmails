@@ -50,3 +50,5 @@ gem 'omniauth-google-oauth2'
 gem 'json'
 
 gem 'figaro'
+
+gem 'google-api-client', :require => 'google/api_client'
