@@ -59,7 +59,7 @@ GEM
       thor (~> 0.14)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
-    google-api-client (0.9.11)
+    google-api-client (0.9.12)
       addressable (~> 2.3)
       googleauth (~> 0.5)
       httpclient (~> 2.7)
@@ -116,9 +116,9 @@ GEM
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
-    omniauth (1.2.2)
+    omniauth (1.3.1)
       hashie (>= 1.2, < 4)
-      rack (~> 1.0)
+      rack (>= 1.0, < 3)
     omniauth-google-oauth2 (0.4.1)
       jwt (~> 1.5.2)
       multi_json (~> 1.3)
@@ -195,7 +195,7 @@ GEM
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uber (0.0.15)
-    uglifier (3.0.1)
+    uglifier (3.0.2)
       execjs (>= 0.3.0, < 3)
     web-console (2.3.0)
       activemodel (>= 4.0)
@@ -210,7 +210,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   figaro
-  google-api-client
+  google-api-client (~> 0.9)
   jbuilder (~> 2.0)
   jquery-rails
   json

@@ -2,6 +2,8 @@
 class SessionsController < ApplicationController
   layout false
 
+  require 'google/api_client'
+
   def new
   end
 
@@ -29,7 +31,7 @@ class SessionsController < ApplicationController
     # @token = @auth['credentials']['token']
     client = Google::APIClient.new
     calendar = Google::Apis::CalendarV3::CalendarService.new
-    # client.authorization.access_token = @token
+    client.authorization.access_token = @access_token
     calendar.authorization = credentials_for(Google::Apis::CalendarV3::AUTH_CALENDAR)
     calendar_id = 'primary'
     @result = calendar.list_events(

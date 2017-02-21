@@ -45,10 +45,13 @@ group :development do
   gem 'spring'
 end
 
-gem 'omniauth'
-gem 'omniauth-google-oauth2'
+# gem 'omniauth'
+# gem 'omniauth-google-oauth2'
 gem 'json'
 
 gem 'figaro'
 
-gem 'google-api-client', :require => 'google/apis/calendar_v3'
+# gem 'google-api-client', :require => 'google/api_client'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'google-api-client', '~> 0.9', require: 'google/apis/calendar_v3'
